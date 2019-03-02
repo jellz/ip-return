@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "cloudflare-express": "^1.0.1",
+    "cors": "^2.8.5",
     "express": "^4.16.4"
   },
   "scripts": {

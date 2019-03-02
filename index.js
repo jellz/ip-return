@@ -1,10 +1,12 @@
 var express = require('express');
 var cloudflare = require('cloudflare-express');
+var cors = require('cors');
 var app = express();
 
 const PORT = process.env.PORT || 3000;
 
 app.set('trust proxy', true);
+app.use(cors());
 app.use(cloudflare.restore());
 
 app.get('/', (req, res) => {
