@@ -9,7 +9,7 @@ app.use(cloudflare.restore());
 
 app.get('/', (req, res) => {
   res.json({
-    ipAddress: req.cf_ip,
+    ip_address: req.cf_ip,
     motivation: 'You can do anything!'
   });
 });
