@@ -5,5 +5,12 @@
   "repository": "git@github.com:jellz/ip-return",
   "author": "Daniel <danielgulic@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "cloudflare-express": "^1.0.1",
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
 }
