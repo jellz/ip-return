@@ -4,12 +4,12 @@ var app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.set('trust proxy');
+app.set('trust proxy', true);
 app.use(cloudflare.restore());
 
 app.get('/', (req, res) => {
   res.json({
-    ipAddress: req.ip,
+    ipAddress: req.cf_ip,
     motivation: 'You can do anything!'
   });
 });
