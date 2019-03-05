@@ -1,7 +1,7 @@
-var express = require('express');
-var cloudflare = require('cloudflare-express');
-var cors = require('cors');
-var app = express();
+const express = require('express');
+const cloudflare = require('cloudflare-express');
+const cors = require('cors');
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 
